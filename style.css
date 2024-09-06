@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.navbar {
+    max-width: 100%;
+    height: 10vh;
+    background-color: #45484a;
+    color: white;
+    transition: all 0.5s;
+    position: sticky;
+    top: 0;
+
+
+}
+
+.head {
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s;
+    max-width: 1320px;
+    margin: auto;
+
+}
+
+.logo img {
+    height: auto;
+    max-width: 120px;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+.nav ul {
+
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 670px;
+
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    width: 670px;
+    font-weight: 400;
+}
+
+.nav li a:hover {
+    color: #5697d0;
+    transition: 0.3s;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.nav ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: -63px;
+    top: 100%;
+
+}
+
+.nav ul li:hover .dropdown-menu ul {
+    display: block;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    margin: 10px;
+    width: 252px;
+    background-color: #ffff;
+
+}
+
+.nav ul li:hover .dropdown-menu ul li {
+    padding: 12px;
+}
+
+
+
+.nav ul li:hover .dropdown-menu ul li a {
+    color: #456c84;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nav ul li:hover .dropdown-menu ul li a:hover {
+    color: #5697d0;
+    transition: 0.3s;
+
+}
+
+
+.poster {
+    width: 100%;
+    height: 14vh;
+    transition: all 0.5s;
+
+}
+
+.innerposter {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 138px;
+    gap: 6px;
+}
+
+.one ul {
+    display: flex;
+    list-style-type: none;
+    gap: 6px;
+}
+
+.one ul a {
+    text-decoration: none;
+    color: #5697d0;
+}
+
+.two {
+    font-weight: 400;
+    font-size: 28px;
+
+}
+
+.main {
+    background-color: whitesmoke;
+    transition: all 0.5s;
+
+}
+
+
+.sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    padding: 120px 0px;
+    margin: 0 auto;
+    width: 76vw;
+}
+
+.sections img {
+    width: 161px;
+    height: 181px;
+    border-radius: 162px;
+    margin: auto;
+
+}
+
+.name {
+    font-size: 33px;
+    font-weight: 400;
+}
+
+.data {
+    width: 223px;
+    margin-left: 10px;
+}
+
+.visulaisation {
+    height: 30vh;
+    display: flex;
+
+
+}
+
+.graph {
+    overflow-y: auto;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 20px;
+    min-width: 10vw;
+    text-align: center;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
+
+}
+
+.content-table thead tr {
+    border-bottom: 2px solid #dddd;
+}
+
+.content-table th,
+.content-table td {
+    padding: 8px 10px;
+}
+
+
+.graph {
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 680px;
+    height: 250px;
+    transition: all 0.5s;
+
+}
+
+
+.sepration {
+    height: 2px;
+    background-color: #45484a;
+    width: 90vw;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272c30;
+    color: white;
+    gap: 30px;
+}
+
+
+.rows,
+.rows1 {
+    height: 360px;
+    width: 300px;
+    padding-top: 60px;
+}
+
+.rows1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.rows a {
+    text-decoration: none;
+    color: white;
+}
+
+.rows ul li {
+    padding-top: 30px;
+}
+
+.rows1 p {
+    padding-top: 40px;
+}
+
+.rows1 h4 {
+    padding-bottom: 16px;
+}
+
+.end {
+    background-color: #2e3339;
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav1{
+    position: absolute;
+    left: -120%;
+    z-index: 1;
+    height: 90vh;
+    width: 80vw;
+    background-color: white;
+    box-shadow: 2px 0px 20px 6px grey;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    margin: 0 38px;
+    margin-top: 40px;
+    border-radius: 10px;
+    
+}
+
+.cross{
+padding: 10px;
+position: relative;
+left: 250px;
+}
+
+.nav1 ul{
+    list-style-type: none;
+}
+
+.nav1 ul a {
+    text-decoration: none;
+    color: #5697d0;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.nav1 ul li{
+    padding: 6px;
+}
+
+.dropdown-menu1 {
+    display: none;
+   
+}
+
+.nav1 ul li:hover .dropdown-menu1 {
+    display: block;
+    position: absolute;
+    top: 0;
+
+}
+
+.nav1 ul li:hover .dropdown-menu1 ul {
+    display: block;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    margin: 10px;
+    width: 252px;
+    background-color: #ffff;
+
+}
+
+.nav1 ul li:hover .dropdown-menu1 ul li {
+    padding: 12px;
+}
+
+
+
+.nav1 ul li:hover .dropdown-menu1 ul li a {
+    color: #456c84;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nav1 ul li:hover .dropdown-menu1 ul li a:hover {
+    color: #5697d0;
+    transition: 0.3s;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+
+    .sections {
+        flex-direction: column;
+    }
+
+
+    .graph {
+        width: 365px;
+        height: 177px;
+        margin-top: 54px;
+    }
+
+    .visulaisation {
+        height: 17vh;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer:first-child {
+        padding-top: 60px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .head {
+        justify-content: space-evenly;
+    }
+
+    .poster {
+        height: 120px;
+    }
+
+    .sections {
+        padding: 26px 0px;
+    }
+
+    .innerposter {
+        margin-left: 66px;
+    }
+    
+    .rows,
+    .rows1 {
+        padding-top: 35px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
